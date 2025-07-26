@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MGVCL - Meter Replacement Note"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000" />
+
+        <!-- Book No and MRN Slip No -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Book No.: 09"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MRN Slip No.: 0426"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Basic Information Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Circle Name:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Division:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sub Division:"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Feeder Name:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DTR Name/Code:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date/Time:"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pole No.:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Consumer Name:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Consumer No.:"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Row 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Consumer Mobile No.:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Row 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Consumer Addrs:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Main Comparison Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="1,2,3"
+            android:background="#000000"
+            android:padding="1dp">
+
+            <!-- Table Header -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="S.No."
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:background="#E0E0E0" />
+                <TextView
+                    android:text="Parameters"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:background="#E0E0E0" />
+                <TextView
+                    android:text="Old Meter"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:background="#E0E0E0" />
+                <TextView
+                    android:text="Smart Meter"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:background="#E0E0E0" />
+            </TableRow>
+
+            <!-- Row 1 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="1."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Old Meter No."
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="902966"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="MGSSEI0030967"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 2 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="2."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Old Meter Phase"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="1"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="1"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+            <!-- Row 3 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="3."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Old Meter Reading (kWh)"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="2649"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="0000010"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 4 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="4."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Meter Reading (kWh)"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text=""
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text=""
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+            <!-- Row 5 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="5."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Meter MD (KW) Only LTMD"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text=""
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text=""
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 6 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="6."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Old Meter Manufacturer"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="HPL"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="L&amp;T"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+            <!-- Row 7 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="7."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Old Box Seal Available (Yes/No)"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="No"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 8 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="8."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Old Meter Body Seal (Yes/No)"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="No"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+            <!-- Row 9 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="9."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Old Terminal Seal No. (Yes/No)"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="No"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 10 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="10."
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Meter Status"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Working"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Installed"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Digital MRN vs Field MRN Comparison Table -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digital MRN vs Field MRN Comparison"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="1,2,3,4,5"
+            android:background="#000000"
+            android:padding="1dp">
+
+            <!-- Table Header -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="S.No."
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:background="#E0E0E0" />
+                <TextView
+                    android:text="Parameter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:background="#E0E0E0" />
+                <TextView
+                    android:text="Digital MRN\nOld Meter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:background="#E0E0E0" />
+                <TextView
+                    android:text="Digital MRN\nSmart Meter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:background="#E0E0E0" />
+                <TextView
+                    android:text="Field MRN\nOld Meter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:background="#E0E0E0" />
+                <TextView
+                    android:text="Field MRN\nSmart Meter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:background="#E0E0E0" />
+            </TableRow>
+
+            <!-- Row 1 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="1."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Meter No."
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="902966"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="MGSSEI0030967"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="MGSSEI0030967"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="SC10512222"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 2 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="2."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Meter Phase"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="1"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="1"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="1"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="1"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+            <!-- Row 3 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="3."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Meter Reading (kWh)"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="2649"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="0000010"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="169797"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="1.1"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 4 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="4."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Meter Reading (kWh)"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text=""
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text=""
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text=""
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text=""
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+            <!-- Row 5 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="5."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Meter MD (KW) Only LTMD"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text=""
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text=""
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text=""
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text=""
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 6 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="6."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Meter Manufacturer"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="HPL"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="L&amp;T"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Genus"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Capital"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+            <!-- Row 7 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="7."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Box Seal Available (Yes/No)"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 8 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="8."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Meter Body Seal (Yes/No)"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="No"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="No"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+            <!-- Row 9 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="9."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Terminal Seal No. (Yes/No)"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:text="Yes"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#FFFFFF" />
+            </TableRow>
+
+            <!-- Row 10 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:text="10."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Meter Status"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Ok"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Installed"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Ok"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+                <TextView
+                    android:text="Ok"
+                    android:padding="4dp"
+                    android:textSize="9sp"
+                    android:background="#F5F5F5" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Image Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OLD Meter Image"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivOldMeterImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#F0F0F0"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MRN Image"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivMrnImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#F0F0F0"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NEW Meter Image"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivNewMeterImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#F0F0F0"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Signature Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consumer Signature:"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#F0F0F0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Representative Signature:"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#F0F0F0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

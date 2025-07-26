@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/si_nav_graph"
+    app:startDestination="@id/splashFrag">
+
+    <fragment
+        android:id="@+id/splashFrag"
+        android:name="com.apc.smartinstallation.ui.screens.SplashFrag"
+        android:label="SplashFrag" >
+        <action
+            android:id="@+id/action_splashFrag_to_loginFrag"
+            app:destination="@id/loginFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFrag"
+        android:name="com.apc.smartinstallation.ui.screens.LoginFrag"
+        android:label="LoginFrag" >
+        <action
+            android:id="@+id/action_loginFrag_to_conListFrag"
+            app:destination="@id/conListFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/conListFrag"
+        android:name="com.apc.smartinstallation.ui.screens.ConListFrag"
+        android:label="ConListFrag" >
+        <action
+            android:id="@+id/action_conListFrag_to_consumerDetailsFrag"
+            app:destination="@id/consumerDetailsFrag" />
+        <action
+            android:id="@+id/action_conListFrag_to_loginFrag"
+            app:destination="@id/loginFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/consumerDetailsFrag"
+        android:name="com.apc.smartinstallation.ui.screens.ConsumerDetailsFrag"
+        android:label="ConsumerDetailsFrag" >
+        <action
+            android:id="@+id/action_consumerDetailsFrag_to_oldMeterCaptureFrag"
+            app:destination="@id/oldMeterCaptureFrag" />
+        <action
+            android:id="@+id/action_consumerDetailsFrag_to_conInfoCaptureFrag"
+            app:destination="@id/conInfoCaptureFrag" />
+        <action
+            android:id="@+id/action_consumerDetailsFrag_to_newMeterCaptureFrag2"
+            app:destination="@id/newMeterCaptureFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/captureFrag"
+        android:name="com.apc.smartinstallation.ui.screens.CaptureFrag"
+        android:label="CaptureFrag" >
+        <action
+            android:id="@+id/action_captureFrag_to_captureRespFrag"
+            app:destination="@id/captureRespFrag" />
+        <action
+            android:id="@+id/action_captureFrag_to_oldMeterCaptureFrag"
+            app:destination="@id/oldMeterCaptureFrag"
+            app:popUpTo="@id/captureFrag"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_captureFrag_to_newMeterCaptureFrag"
+            app:destination="@id/newMeterCaptureFrag"
+            app:popUpTo="@id/captureFrag"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/captureRespFrag"
+        android:name="com.apc.smartinstallation.ui.screens.CaptureRespFrag"
+        android:label="CaptureRespFrag" />
+    <fragment
+        android:id="@+id/mrnUiFrag"
+        android:name="com.apc.smartinstallation.ui.screens.MrnUiFrag"
+        android:label="MrnUiFrag" >
+        <action
+            android:id="@+id/action_mrnUiFrag_to_simDetailsFrag"
+            app:destination="@id/simDetailsFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/simDetailsFrag"
+        android:name="com.apc.smartinstallation.ui.screens.SimDetailsFrag"
+        android:label="SimDetailsFrag" >
+        <action
+            android:id="@+id/action_simDetailsFrag_to_signatureFrag"
+            app:destination="@id/signatureFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/signatureFrag"
+        android:name="com.apc.smartinstallation.ui.screens.SignatureFrag"
+        android:label="SignatureFrag" >
+        <action
+            android:id="@+id/action_signatureFrag_to_mrnPdfFragmentNew"
+            app:destination="@id/mrnPdfFragmentNew" />
+    </fragment>
+    <fragment
+        android:id="@+id/mrnPdfFrag"
+        android:name="com.apc.smartinstallation.ui.screens.MrnPdfFragmentNew"
+        android:label="MrnPdfFrag" >
+        <action
+            android:id="@+id/action_mrnPdfFrag_to_conListFrag"
+            app:destination="@id/conListFrag"
+            app:popUpTo="@id/conListFrag"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_mrnPdfFrag_to_consumerDetailsFrag"
+            app:destination="@id/consumerDetailsFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/oldMeterCaptureFrag"
+        android:name="com.apc.smartinstallation.ui.screens.OldMeterCaptureFrag"
+        android:label="OldMeterCaptureFrag" >
+        <action
+            android:id="@+id/action_oldMeterCaptureFrag_to_consumerDetailsFrag"
+            app:destination="@id/consumerDetailsFrag" />
+        <action
+            android:id="@+id/action_oldMeterCaptureFrag_to_newMeterCaptureFrag"
+            app:destination="@id/newMeterCaptureFrag" />
+        <action
+            android:id="@+id/action_oldMeterCaptureFrag_to_captureFrag"
+            app:destination="@id/captureFrag" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/newMeterCaptureFrag"
+        android:name="com.apc.smartinstallation.ui.screens.NewMeterCaptureFrag"
+        android:label="NewMeterCaptureFrag" >
+        <action
+            android:id="@+id/action_newMeterCaptureFrag_to_captureFrag"
+            app:destination="@id/captureFrag" />
+        <action
+            android:id="@+id/action_newMeterCaptureFrag_to_signatureFrag"
+            app:destination="@id/signatureFrag" />
+        <action
+            android:id="@+id/action_newMeterCaptureFrag_to_mrnFrag"
+            app:destination="@id/mrnFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/conInfoCaptureFrag"
+        android:name="com.apc.smartinstallation.ui.screens.ConInfoCaptureFrag"
+        android:label="ConInfoCaptureFrag" >
+        <action
+            android:id="@+id/action_conInfoCaptureFrag_to_captureFrag"
+            app:destination="@id/captureFrag" />
+        <action
+            android:id="@+id/action_conInfoCaptureFrag_to_oldMeterCaptureFrag"
+            app:destination="@id/oldMeterCaptureFrag" />
+        <action
+            android:id="@+id/action_conInfoCaptureFrag_to_consumerDetailsFrag"
+            app:destination="@id/consumerDetailsFrag" />
+        <action
+            android:id="@+id/action_conInfoCaptureFrag_to_newMeterCaptureFrag"
+            app:destination="@id/newMeterCaptureFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/mrnFrag"
+        android:name="com.apc.smartinstallation.ui.screens.MRNFragment"
+        tools:layout="@layout/frag_mrn">
+        <action
+            android:id="@+id/action_mrnFrag_to_signatureFragment"
+            app:destination="@id/signatureFrag" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mrnPdfFragmentNew"
+        android:name="com.apc.smartinstallation.ui.screens.MrnPdfFragmentNew"
+        tools:layout="@layout/frag_pdf">
+        <action
+            android:id="@+id/action_mrnFrag_to_signatureFragment"
+            app:destination="@id/signatureFrag" />
+
+
+    </fragment>
+</navigation>

@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MGVCL - Meter Replacement Note"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000" />
+
+        <!-- Book and MRN Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Book No.: "
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etBookNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="09"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MRN Slip No.: "
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMrnSlipNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0426"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Basic Information Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="Circle Name:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etCircleName"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Division:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etDivision"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="Sub Division:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etSubDivision"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Feeder Name:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etFeederName"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="DTR Name/Code:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etDtrName"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Date/Time:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etDateTime"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="Pole No.:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etPoleNo"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Consumer Name:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etConsumerName"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="Consumer No.:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etConsumerNo"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Consumer Mobile No.:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etConsumerMobile"
+                    android:padding="8dp"
+                    android:inputType="phone" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="Consumer Address:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etConsumerAddress"
+                    android:padding="8dp"
+                    android:background="@android:color/white"
+                    android:minLines="2" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- OLD Meter Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OLD Meter Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="2">
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="S.No."
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Parameters"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Details"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="1."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Old Meter No."
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldMeterNo"
+                    android:text="902966"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="2."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Old Meter Phase"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldMeterPhase"
+                    android:text="1"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="3."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Old Meter Reading (kWh)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldMeterReading"
+                    android:text="2649"
+                    android:padding="8dp"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="4."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Reading (kWh)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldMeterReading2"
+                    android:padding="8dp"
+                    android:background="@android:color/white"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="5."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter MD (KW) Only LTMD"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldMeterMD"
+                    android:padding="8dp"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="6."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Old Meter Manufacturer"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldMeterManufacturer"
+                    android:text="HPL"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="7."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Old Box Seal Available (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldBoxSeal"
+                    android:text="No"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="8."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Old Meter Body Seal (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldBodySeal"
+                    android:text="No"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="9."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Old Terminal Seal No. (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldTerminalSeal"
+                    android:text="No"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="10."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Status"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etOldMeterStatus"
+                    android:text="Working"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Old Meter Image -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Old Meter Image:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/ivOldMeter"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:background="#E0E0E0"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <!-- NEW Meter Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEW Meter Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="2">
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="S.No."
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Parameters"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Details"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="1."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="New Meter No."
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewMeterNo"
+                    android:text="MGSSEI0030967"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="2."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="New Meter Phase"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewMeterPhase"
+                    android:text="1"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="3."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="New Meter Reading (kWh)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewMeterReading"
+                    android:text="0000010"
+                    android:padding="8dp"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="4."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Reading (kWh)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewMeterReading2"
+                    android:padding="8dp"
+                    android:background="@android:color/white"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="5."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter MD (KW) Only LTMD"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewMeterMD"
+                    android:padding="8dp"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="6."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="New Meter Manufacturer"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewMeterManufacturer"
+                    android:text="L &amp;T"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="7."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="New Box Seal Available (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewBoxSeal"
+                    android:text="Yes"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="8."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="New Meter Body Seal (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewBodySeal"
+                    android:text="Yes"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="9."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="New Terminal Seal No. (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewTerminalSeal"
+                    android:text="Yes"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="10."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Status"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etNewMeterStatus"
+                    android:text="Installed"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- New Meter Image -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Meter Image:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/ivNewMeter"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:background="#E0E0E0"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <!-- MRN Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MRN Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:background="#FF9800"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <!-- Consumer Info for MRN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Consumer Name:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMrnConsumerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Consumer No.:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMrnConsumerNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mobile No.:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMrnMobileNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <!-- MRN Comparison Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="2,3">
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="S.No."
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Parameters"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Old Meter"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Smart Meter"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="1."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter No."
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldMeterNo"
+                    android:text="MGSSEI0030967"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnSmartMeterNo"
+                    android:text="MGTCPG0008530"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="2."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Phase"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldPhase"
+                    android:text="1"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+                <EditText
+                    android:id="@+id/etMrnSmartPhase"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="3."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Reading (kWh)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldReading"
+                    android:text="169797"
+                    android:padding="8dp"
+                    android:inputType="number" />
+                <EditText
+                    android:id="@+id/etMrnSmartReading"
+                    android:text="03"
+                    android:padding="8dp"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="4."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Reading (kWh)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldReading2"
+                    android:padding="8dp"
+                    android:background="@android:color/white"
+                    android:inputType="number" />
+                <EditText
+                    android:id="@+id/etMrnSmartReading2"
+                    android:padding="8dp"
+                    android:background="@android:color/white"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="5."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter MD (KW) Only LTMD"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldMD"
+                    android:padding="8dp"
+                    android:inputType="number" />
+                <EditText
+                    android:id="@+id/etMrnSmartMD"
+                    android:padding="8dp"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="6."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Manufacturer"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldManufacturer"
+                    android:text="Genus"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+                <EditText
+                    android:id="@+id/etMrnSmartManufacturer"
+                    android:text="Capital"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="7."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Box Seal Available (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldBoxSeal"
+                    android:text="No"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnSmartBoxSeal"
+                    android:text="Yes"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="8."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Body Seal (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldBodySeal"
+                    android:text="No"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+                <EditText
+                    android:id="@+id/etMrnSmartBodySeal"
+                    android:text="Yes"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="9."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Terminal Seal No. (Yes/No)"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldTerminalSeal"
+                    android:text="No"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnSmartTerminalSeal"
+                    android:text="Yes"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="10."
+                    android:padding="8dp"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Meter Status"
+                    android:padding="8dp" />
+                <EditText
+                    android:id="@+id/etMrnOldStatus"
+                    android:text="Working"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+                <EditText
+                    android:id="@+id/etMrnSmartStatus"
+                    android:text="Installed"
+                    android:padding="8dp"
+                    android:background="@android:color/white" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Final Comparison Table -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digital MRN vs Field MRN Comparison"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:background="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="2,3,4,5">
+
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:text="S.No."
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+                <TextView
+                    android:text="Parameter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+                <TextView
+                    android:text="Digital MRN Old Meter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+                <TextView
+                    android:text="Digital MRN Smart Meter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+                <TextView
+                    android:text="Field MRN Old Meter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+                <TextView
+                    android:text="Field MRN Smart Meter"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="1."
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+                <TextView
+                    android:text="Meter No."
+                    android:padding="4dp"
+                    android:textSize="12sp" />
+                <EditText
+                    android:id="@+id/etDigitalOldMeterNo"
+                    android:text="902966"
+                    android:padding="4dp"
+                    android:textSize="12sp" />
+                <EditText
+                    android:id="@+id/etDigitalSmartMeterNo"
+                    android:text="MGSSEI0030967"
+                    android:padding="4dp"
+                    android:textSize="12sp" />
+                <EditText
+                    android:id="@+id/etFieldOldMeterNo"
+                    android:text="MGSSEI0030967"
+                    android:padding="4dp"
+                    android:textSize="12sp" />
+                <EditText
+                    android:id="@+id/etFieldSmartMeterNo"
+                    android:text="SC10512222"
+                    android:padding="4dp"
+                    android:textSize="12sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Signature Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consumer Signature:"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:id="@+id/ivConsumerSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#E0E0E0"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_edit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Representative Signature:"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:id="@+id/ivRepresentativeSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#E0E0E0"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_edit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
