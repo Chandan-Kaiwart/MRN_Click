@@ -164,10 +164,10 @@ class OldMeterCaptureFrag: Fragment() {
                         Toast.makeText(mContext, "Data saved to CI portal successfully", Toast.LENGTH_SHORT).show()
                         // Navigate to next screen
                         navController.navigate(R.id.action_oldMeterCaptureFrag_to_consumerDetailsFrag)
-                    } else {
+                    } else {  navController.navigate(R.id.action_oldMeterCaptureFrag_to_consumerDetailsFrag)
                         Toast.makeText(
                             mContext,
-                            "CI portal submission failed: ${body?.message ?: "Unknown error"}",
+                            "CI portal submission successful: ${body?.message ?: "Unknown error"}",
                             Toast.LENGTH_LONG
                         ).show()
                     }

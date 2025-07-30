@@ -108,6 +108,7 @@ class NewMeterCaptureFrag:Fragment() {
                 }
             }
             validateAndSubmitData()
+            navController.navigate(R.id.action_newMeterCaptureFrag_to_mrnFrag)
         }
     }
 

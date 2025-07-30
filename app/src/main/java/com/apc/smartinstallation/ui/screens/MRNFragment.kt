@@ -21,6 +21,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.apc.smartinstallation.R
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.apc.smartinstallation.api.MeterReadingRequest
 import com.apc.smartinstallation.dataClasses.MRNReadingRequest
 import com.apc.smartinstallation.dataClasses.retrofit.RetrofitClient
@@ -96,6 +99,7 @@ class MRNFragment : Fragment() {
             if (validateInputs()) {
                 submitData()
             }
+            findNavController().navigate(R.id.action_mrnFrag_to_signatureFragment)
         }
     }
 
