@@ -48,6 +48,8 @@ runtimeLivedata = "1.8.2"
 mapsCompose = "2.11.2"
 playServicesMaps = "19.2.0"
 navigationRuntimeAndroid = "2.9.0"
+navigationFragmentKtxVersion = "2.9.3"
+navigationUiKtx = "2.9.3"
 
 
 [libraries]
@@ -118,6 +120,8 @@ androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtim
 maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
 play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 androidx-navigation-runtime-android = { group = "androidx.navigation", name = "navigation-runtime-android", version.ref = "navigationRuntimeAndroid" }
+navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtxVersion" }
+navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
