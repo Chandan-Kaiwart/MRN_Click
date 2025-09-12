@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Header Section IDs -->
+    <item name="etBookNo" type="id" />
+    <item name="etMrnSlipNo" type="id" />
+
+    <!-- Basic Information Section IDs -->
+    <item name="etCircleName" type="id" />
+    <item name="etDivision" type="id" />
+    <item name="etSubDivision" type="id" />
+    <item name="etFeederName" type="id" />
+    <item name="etDtrName" type="id" />
+    <item name="etDateTime" type="id" />
+    <item name="etPoleNo" type="id" />
+    <item name="etConsumerName" type="id" />
+    <item name="etConsumerNo" type="id" />
+    <item name="etConsumerMobile" type="id" />
+    <item name="etConsumerAddress" type="id" />
+
+    <!-- OLD Meter Information Section IDs -->
+    <item name="etOldMeterNo" type="id" />
+    <item name="etOldMeterPhase" type="id" />
+    <item name="etOldMeterReading" type="id" />
+    <item name="etOldMeterReading2" type="id" />
+    <item name="etOldMeterMD" type="id" />
+    <item name="etOldMeterManufacturer" type="id" />
+    <item name="etOldBoxSeal" type="id" />
+    <item name="etOldBodySeal" type="id" />
+    <item name="etOldTerminalSeal" type="id" />
+    <item name="etOldMeterStatus" type="id" />
+    <item name="ivOldMeter" type="id" />
+
+    <!-- NEW Meter Information Section IDs -->
+    <item name="etNewMeterNo" type="id" />
+    <item name="etNewMeterPhase" type="id" />
+    <item name="etNewMeterReading" type="id" />
+    <item name="etNewMeterReading2" type="id" />
+    <item name="etNewMeterMD" type="id" />
+    <item name="etNewMeterManufacturer" type="id" />
+    <item name="etNewBoxSeal" type="id" />
+    <item name="etNewBodySeal" type="id" />
+    <item name="etNewTerminalSeal" type="id" />
+    <item name="etNewMeterStatus" type="id" />
+    <item name="ivNewMeter" type="id" />
+
+    <!-- MRN Information Section IDs -->
+    <item name="etMrnConsumerName" type="id" />
+    <item name="etMrnConsumerNo" type="id" />
+    <item name="etMrnMobileNo" type="id" />
+
+    <!-- MRN Comparison Table IDs -->
+    <item name="etMrnOldMeterNo" type="id" />
+    <item name="etMrnSmartMeterNo" type="id" />
+    <item name="etMrnOldPhase" type="id" />
+    <item name="etMrnSmartPhase" type="id" />
+    <item name="etMrnOldReading" type="id" />
+    <item name="etMrnSmartReading" type="id" />
+    <item name="etMrnOldReading2" type="id" />
+    <item name="etMrnSmartReading2" type="id" />
+    <item name="etMrnOldMD" type="id" />
+    <item name="etMrnSmartMD" type="id" />
+    <item name="etMrnOldManufacturer" type="id" />
+    <item name="etMrnSmartManufacturer" type="id" />
+    <item name="etMrnOldBoxSeal" type="id" />
+    <item name="etMrnSmartBoxSeal" type="id" />
+    <item name="etMrnOldBodySeal" type="id" />
+    <item name="etMrnSmartBodySeal" type="id" />
+    <item name="etMrnOldTerminalSeal" type="id" />
+    <item name="etMrnSmartTerminalSeal" type="id" />
+    <item name="etMrnOldStatus" type="id" />
+    <item name="etMrnSmartStatus" type="id" />
+
+    <!-- Digital vs Field MRN Comparison IDs -->
+    <item name="etDigitalOldMeterNo" type="id" />
+    <item name="etDigitalSmartMeterNo" type="id" />
+    <item name="etFieldOldMeterNo" type="id" />
+    <item name="etFieldSmartMeterNo" type="id" />
+    <item name="etDigitalOldPhase" type="id" />
+    <item name="etDigitalSmartPhase" type="id" />
+    <item name="etFieldOldPhase" type="id" />
+    <item name="etFieldSmartPhase" type="id" />
+    <item name="etDigitalOldReading" type="id" />
+    <item name="etDigitalSmartReading" type="id" />
+    <item name="etFieldOldReading" type="id" />
+    <item name="etFieldSmartReading" type="id" />
+    <item name="etDigitalOldReading2" type="id" />
+    <item name="etDigitalSmartReading2" type="id" />
+    <item name="etFieldOldReading2" type="id" />
+    <item name="etFieldSmartReading2" type="id" />
+    <item name="etDigitalOldMD" type="id" />
+    <item name="etDigitalSmartMD" type="id" />
+    <item name="etFieldOldMD" type="id" />
+    <item name="etFieldSmartMD" type="id" />
+    <item name="etDigitalOldManufacturer" type="id" />
+    <item name="etDigitalSmartManufacturer" type="id" />
+    <item name="etFieldOldManufacturer" type="id" />
+    <item name="etFieldSmartManufacturer" type="id" />
+    <item name="etDigitalOldBoxSeal" type="id" />
+    <item name="etDigitalSmartBoxSeal" type="id" />
+    <item name="etFieldOldBoxSeal" type="id" />
+    <item name="etFieldSmartBoxSeal" type="id" />
+    <item name="etDigitalOldBodySeal" type="id" />
+    <item name="etDigitalSmartBodySeal" type="id" />
+    <item name="etFieldOldBodySeal" type="id" />
+    <item name="etFieldSmartBodySeal" type="id" />
+    <item name="etDigitalOldTerminalSeal" type="id" />
+    <item name="etDigitalSmartTerminalSeal" type="id" />
+    <item name="etFieldOldTerminalSeal" type="id" />
+    <item name="etFieldSmartTerminalSeal" type="id" />
+    <item name="etDigitalOldStatus" type="id" />
+    <item name="etDigitalSmartStatus" type="id" />
+    <item name="etFieldOldStatus" type="id" />
+    <item name="etFieldSmartStatus" type="id" />
+
+    <!-- Signature Section IDs -->
+    <item name="ivConsumerSignature" type="id" />
+    <item name="ivRepresentativeSignature" type="id" />
+
+    <!-- Additional Layout Container IDs -->
+    <item name="llHeaderSection" type="id" />
+    <item name="tlBasicInfo" type="id" />
+    <item name="llOldMeterSection" type="id" />
+    <item name="tlOldMeterInfo" type="id" />
+    <item name="llNewMeterSection" type="id" />
+    <item name="tlNewMeterInfo" type="id" />
+    <item name="llMrnSection" type="id" />
+    <item name="tlMrnComparison" type="id" />
+    <item name="llDigitalFieldSection" type="id" />
+    <item name="tlDigitalFieldComparison" type="id" />
+    <item name="llSignatureSection" type="id" />
+
+    <!-- Button IDs for Actions -->
+    <item name="btnCaptureOldMeter" type="id" />
+    <item name="btnCaptureNewMeter" type="id" />
+    <item name="btnCaptureConsumerSignature" type="id" />
+    <item name="btnCaptureRepSignature" type="id" />
+    <item name="btnSaveForm" type="id" />
+    <item name="btnSubmitForm" type="id" />
+    <item name="btnClearForm" type="id" />
+    <item name="btnExportPdf" type="id" />
+
+    <!-- Spinner/Dropdown IDs -->
+    <item name="spnOldMeterPhase" type="id" />
+    <item name="spnNewMeterPhase" type="id" />
+    <item name="spnOldBoxSeal" type="id" />
+    <item name="spnNewBoxSeal" type="id" />
+    <item name="spnOldBodySeal" type="id" />
+    <item name="spnNewBodySeal" type="id" />
+    <item name="spnOldTerminalSeal" type="id" />
+    <item name="spnNewTerminalSeal" type="id" />
+    <item name="spnOldMeterStatus" type="id" />
+    <item name="spnNewMeterStatus" type="id" />
+
+    <!-- Progress and Status IDs -->
+    <item name="pbFormProgress" type="id" />
+    <item name="tvFormStatus" type="id" />
+    <item name="tvLastSaved" type="id" />
+
+    <!-- Navigation IDs -->
+    <item name="btnPrevious" type="id" />
+    <item name="btnNext" type="id" />
+    <item name="tvSectionTitle" type="id" />
+
+    <!-- Validation Error IDs -->
+    <item name="tvErrorMessage" type="id" />
+    <item name="llErrorContainer" type="id" />
+
+    <!-- Date/Time Picker IDs -->
+    <item name="btnSelectDate" type="id" />
+    <item name="btnSelectTime" type="id" />
+    <item name="tvSelectedDateTime" type="id" />
+
+    <!-- Search/Filter IDs -->
+    <item name="etSearchConsumer" type="id" />
+    <item name="btnSearchConsumer" type="id" />
+    <item name="rvConsumerList" type="id" />
+
+    <!-- Menu and Toolbar IDs -->
+    <item name="toolbar" type="id" />
+    <item name="menuSave" type="id" />
+    <item name="menuExport" type="id" />
+    <item name="menuSettings" type="id" />
+    <item name="menuHelp" type="id" />
+
+</resources>

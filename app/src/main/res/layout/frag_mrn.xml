@@ -1,0 +1,190 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#87CEFA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Account ID -->
+        <TextView
+            android:id="@+id/tvAccountId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acc. Id :"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Image Capture Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to take/re-take image - MRN"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imgMeter"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_baseline_image_24"/>
+
+            <EditText
+                android:id="@+id/etManualReading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter manual reading"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Consumer Info -->
+        <EditText
+            android:id="@+id/etConsumerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consumer Name"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etConsumerNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consumer No."
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etConsumerMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consumer Mobile No."
+            android:inputType="phone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Old Meter Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Old Meter"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etOldMeterNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Old Meter No."
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etOldMeterReading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Old Meter Reading"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etOldMeterMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Old Meter Make"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etOldPhase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phase"
+            android:layout_marginBottom="16dp" />
+
+        <!-- New Meter Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Meter"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etNewMeterNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Meter No."
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNewMeterReading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Meter Reading"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNewMeterMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Meter Make"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNewPhase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phase"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etBoxSeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Box Seal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etBodySeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Body Seal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTerminalSeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Terminal Seal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:background="#1E3A8A"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
+</layout>
